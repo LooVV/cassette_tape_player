@@ -1,0 +1,273 @@
+:root {
+    --border: 9px;
+}
+
+body{
+    background-color: #f6dfda;
+}
+
+* {
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Righteous", cursive;
+}
+
+.cassette-player {
+    background-color: #f6dfda;
+    max-width: 575px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#audioPlayer {
+    width: 100%;
+    margin-top: 25px;
+
+}
+
+#audioPlayer button {
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 3px #8d8d8d inset;
+    color: white;
+
+
+    width: 100px;
+    height: 40px;
+    
+    outline: none;
+    border-radius: 10px;
+}
+
+#audioPlayer i {
+    color: #10493e;
+    font-size: 20px;
+}
+
+.cassette {
+    background-color: #30a996;
+    height: 325px;
+    width: 100%;
+    border-radius: 15px;
+    align-content: center;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cassette-sticker {
+    background-color: #e3dcaa;
+    width: auto;
+    padding-top: 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.name-label-container{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.green-dot {
+    position: relative;
+    background-color: #10493e;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    
+}
+
+.green-dot-bottom {
+    margin: 15px;
+}
+
+.holder-point {
+    position: relative;
+    background-color: #30a996;
+    width: 15px;
+    height: 15px;
+}
+
+.holder-dot {
+    border-radius: 15px;
+}
+
+.holder-cnt-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 6;
+
+    position: absolute;
+}
+
+.holder-square-container {
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+.holder-dot-container {
+    margin-top: 35px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.dot-container-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 6;
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+.dot-container-bot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex: 5;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.mid-sticker{
+    width: 40%;
+    height: 70%;
+    margin-top: 15px;
+    background-color: #30a996;
+}
+
+.holder {
+    border-bottom: 65px solid #30695c;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+
+    position: relative;
+
+    width: 320px;
+    margin-bottom: 100px;
+    margin: auto;
+    filter: drop-shadow(0 -2px 2px black);
+}
+
+.tape-container {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.white-space {
+    background-color: #e3dcaa;
+    height: 100%;
+    flex: 1;
+}
+
+.wheel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 6;
+    padding: 12px;
+    border-radius: 500px;
+    background-color: #10493e;
+    position: relative;
+    top: -40px;
+}
+
+.wheel {
+    width: 65px;
+    height: 65px;
+    background-color: #30a996;
+    border-radius: 50%;
+}
+
+.wheel-overlap {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.inner-circle {
+    top: 15%;
+    left: 15%;
+    position: absolute;
+
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.bar {
+    position: absolute;
+    margin: 0 auto;
+    height: 65px;
+    margin-left: 30px;
+    width: 4px;
+    background-color: white;
+    z-index: 10;
+}
+
+.wheel-overlap .bar:nth-child(2) {
+    transform: rotate(60deg);
+}
+.wheel-overlap .bar:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.red-line {
+    background-color: #df2a13;
+    height: 40px;
+    width: 100%;
+}
+
+.white {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    text-align: center;
+    font-size: 18px;
+    color: #10493e;
+}
+
+.spin {
+    animation: rotate 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.spinReverse {
+    animation: reverse 4s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverse {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cassette-player {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

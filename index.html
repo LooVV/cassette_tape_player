@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cassette Tape Player</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Button icons -->
+    <script src="https://kit.fontawesome.com/4d9bce4b44.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="cassette-player">
+        <div class="cassette">
+            <div class="dot-container-top">
+
+                <div class="green-dot"></div>
+                <div class="green-dot"></div>
+            </div>
+            <div class="cassette-sticker">
+                <div>
+                    <div id="label2" class="label">Guns N' Roses</div>
+                </div>
+                
+                <div class="name-label-container">
+                    <div id="label" class="label">Welcome To The Jungle</div>
+                </div>
+
+                <div class="red-line"></div>
+
+                <div class="tape-container">
+
+                    <div class="white-space"></div>
+                    <div class="wheel-container">
+
+                        <div class="wheel spin">
+                            <div class="wheel-overlap">
+                                <div class="inner-circle"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="mid-sticker"></div>
+                        <div class="wheel spin">
+                            <div class="wheel-overlap">
+                                <div class="inner-circle"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-space"></div>
+                </div>
+
+            </div>
+            <div class="dot-container-bot">
+
+                <div class="green-dot green-dot-bottom"></div>
+                <div class="holder">
+
+                    <div class="holder-cnt-container holder-square-container">
+                        <div class="holder-point"></div>
+                        <div class="holder-point"></div>
+                    </div>
+                    <div class="holder-cnt-container holder-dot-container">
+                        <div class="holder-point holder-dot"></div>
+                        <div class="holder-point holder-dot"></div>
+                    </div>
+
+                </div>
+                <div class="green-dot green-dot-bottom"></div>
+            </div>
+
+        </div>
+        <div id="audioPlayer">
+            <div class="row">
+                <div class="col-xs-3">
+                    <button class="previous">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button id="play_btn" class="play">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button id="pause_btn" class="pause">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="next">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <input type="file" id="song_picker">
+    </div>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
